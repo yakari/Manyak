@@ -1,0 +1,94 @@
+<GridLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/item_detail"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context="info.yakablog.manyak.ItemDetailFragment"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productPicture"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:minHeight="220dp"
+        android:maxWidth="220dp"
+        android:maxHeight="220dp"
+        android:minWidth="220dp"
+        android:clickable="true"
+        android:layout_rowSpan="2"
+        android:layout_columnSpan="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Amazon"
+        android:id="@+id/searchAmazonButton"
+        android:onClick="initiateAmazonSearch"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title: "
+        android:id="@+id/labelTitle"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemTitle"
+        android:layout_gravity="left|top"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Enter the title of your item"
+        android:maxLines="1"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnSpan="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lend to..."
+        android:id="@+id/lendButton"
+        android:layout_row="2"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrower: "
+        android:id="@+id/borrowerLabel"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemBorrower"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Enter the name of the person who borrowed this item from you" />
+
+</GridLayout>
